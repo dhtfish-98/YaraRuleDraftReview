@@ -1,0 +1,137 @@
+{
+  "runtime_dependency": "yara-python==4.5.4",
+  "sdist": {
+    "path": "validation-local/reference/yara_python-4.5.4.tar.gz",
+    "bytes": 551142,
+    "sha256": "4c682170f3d5cb3a73aa1bd0dc9ab1c0957437b937b7a83ff6d7ffd366415b9c"
+  },
+  "fixed_upstream": {
+    "VirusTotal/yara": {
+      "sha": "7ff39042be5c63682a037e13a75221d59393cf8b",
+      "type": "commit",
+      "url": "https://api.github.com/repos/VirusTotal/yara/git/commits/7ff39042be5c63682a037e13a75221d59393cf8b"
+    },
+    "VirusTotal/yara-python": {
+      "sha": "74920b6da9a70a162b3bdc41b30e4af02e5c7dff",
+      "type": "commit",
+      "url": "https://api.github.com/repos/VirusTotal/yara-python/git/commits/74920b6da9a70a162b3bdc41b30e4af02e5c7dff"
+    },
+    "libyara_COPYING_sha256": "efdabc1c1f655528b8c3a59b03668d446746d87273fab76f8af800b6e8891bd2",
+    "yara_submodule": {
+      "path": "yara",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "7ff39042be5c63682a037e13a75221d59393cf8b"
+    },
+    "binding_sdist_equals_fixed_git_bytes": true
+  },
+  "binding_selected_review": {
+    "path": "yara-python.c",
+    "sha256": "44328b8733682aeae70e22235c4b81cf08d1896d617fa1500866189927bdf693",
+    "physical_lines": 3271,
+    "reviewed_complete_ranges": [
+      [
+        1,
+        210
+      ],
+      [
+        970,
+        1375
+      ],
+      [
+        2086,
+        2315
+      ],
+      [
+        2520,
+        3000
+      ],
+      [
+        3082,
+        3271
+      ]
+    ],
+    "selected_api": "initialization/constants; generated-source compile/includes disabled/strict_escape/warning handling; bytes-memory scans/fast/timeout/result/warning callbacks",
+    "whole_binding_or_libyara_security_audit": "OPEN"
+  },
+  "setup_py": {
+    "path": "validation-local/reference/setup.py",
+    "bytes": 14743,
+    "sha256": "3cb0a3e41ea7dd42614a9758cb7532797ef1ea931c5979c53ac73d0b13478f75",
+    "full_read": true,
+    "optional_build_modules": "not enabled by this product; extension default build can still link native dependencies"
+  },
+  "license_supplement": {
+    "distinct_original_embedded_comments": 33,
+    "original_uses": 129,
+    "full_notice_texts_preserved": true,
+    "source_binary_equivalence": "OPEN"
+  },
+  "local_native_build": {
+    "verified_sdist_sha256": "4c682170f3d5cb3a73aa1bd0dc9ab1c0957437b937b7a83ff6d7ffd366415b9c",
+    "command": "pip wheel --no-deps --no-build-isolation --no-cache-dir verified-sdist -w private-wheelhouse",
+    "wheel": {
+      "path": "validation-local/wheelhouse/yara_python-4.5.4-cp314-cp314-macosx_26_0_arm64.whl",
+      "bytes": 227269,
+      "sha256": "eccbf3acfb7c10392525e0e7b94a25d71ff473370e26b8056c289a8e2ef9549f"
+    },
+    "module": {
+      "path": "yara.cpython-314-darwin.so",
+      "bytes": 617032,
+      "sha256": "53852207d6bd5197b45c94e4900e76fff48de96bd84b07bf8547b6ac6c4451ee"
+    },
+    "binding_reported_version": "4.5.4",
+    "libyara_reported_version": "4.5.4",
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+    "linked_libraries": [
+      "/opt/homebrew/opt/openssl@3/lib/libcrypto.3.dylib",
+      "/usr/lib/libSystem.B.dylib"
+    ],
+    "OpenSSL_observed_version": "OpenSSL 3.6.2 7 Apr 2026",
+    "libcrypto": {
+      "path": "libcrypto.3.dylib",
+      "bytes": 4845712,
+      "sha256": "ef2239cec921003b54b61968f00489271e2a2805d7d1b4e69d632423f38efe1e"
+    },
+    "local_build_and_observed_execution": "PASS",
+    "other_platform_binary_identity": "OPEN"
+  },
+  "license_files": [
+    {
+      "path": "licenses/GPL-3.0-reference.txt",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "licenses/OpenSSL-3.6.2-Apache-2.0-reference.txt",
+      "bytes": 10175,
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "licenses/libyara-BSD-3-Clause.txt",
+      "bytes": 1493,
+      "sha256": "efdabc1c1f655528b8c3a59b03668d446746d87273fab76f8af800b6e8891bd2"
+    },
+    {
+      "path": "licenses/yarGen-BSD-3-Clause.txt",
+      "bytes": 1523,
+      "sha256": "316e655c34d5e3fed6c923955c6171addd5058e8e5bf729bc685cf868fe4bfb7"
+    },
+    {
+      "path": "licenses/yara-python-Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "licenses/yara-python-embedded-notices.txt",
+      "bytes": 54493,
+      "sha256": "feddbcd5ce18643e80a3975736fee93672d97043152e2685afcabe30510b05c9"
+    }
+  ],
+  "primary_docs": [
+    "https://yara.readthedocs.io/en/stable/yarapython.html"
+  ],
+  "native_dependency_full_implementation_review": "OPEN",
+  "native_security_and_supply_chain_authenticity": "OPEN"
+}

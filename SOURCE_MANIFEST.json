@@ -1,0 +1,218 @@
+{
+  "schema": 1,
+  "project": "YaraRuleDraftReview",
+  "version": "0.1.0",
+  "self_excluded_to_avoid_recursive_hash": true,
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 2031,
+      "lines": 40,
+      "sha256": "dcdfe881a13e1d9850f2685ef0a974a35a86080e3981186b3519f74b2e13310e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 86,
+      "lines": 8,
+      "sha256": "70a1974d724485f556bc30266d0ed0c78911be0b8c53af73ca58c4a75298930e"
+    },
+    {
+      "path": "DEFENSIVE_SCOPE.md",
+      "bytes": 2274,
+      "lines": 33,
+      "sha256": "f71f8b27872efca9abac9020d6ab4017c1ec9d40b422b711d1460f10da8de4a4"
+    },
+    {
+      "path": "DEPENDENCY_AUDIT.json",
+      "bytes": 4773,
+      "lines": 137,
+      "sha256": "255d9e04309329c609f4a83e0d8b7766363f260e6a4c8b893722b5d46c088ed0"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "lines": 202,
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "MANIFEST.in",
+      "bytes": 339,
+      "lines": 7,
+      "sha256": "4bb7e08ed3f8c10931393495c7117b4184c8f3adf2a214e0bb8801f7a808101e"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 2093,
+      "lines": 34,
+      "sha256": "c759ef90ec9ab1d9183397d344d746fa6b47587d603d91f985fd5d216f3d3e48"
+    },
+    {
+      "path": "ORIGIN.md",
+      "bytes": 3345,
+      "lines": 51,
+      "sha256": "a76b51bff7f4e172006c5c27456bd5bb9e8be3737580aa11b16502f2596dfac0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7748,
+      "lines": 139,
+      "sha256": "703847a5c6811fa1ae3118ab13d02dd743502b10987d833427be10c4af380c34"
+    },
+    {
+      "path": "SOURCE_AUDIT.json",
+      "bytes": 3294,
+      "lines": 72,
+      "sha256": "7e4fbb48310d25686e836fb158bc97aee0dbf4d4e96439dd33289cdca1e2e71a"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 3638,
+      "lines": 53,
+      "sha256": "f69c9d8e278805c0211613e6689519b0df3a56c1c7f5d89bd572005f8c29928d"
+    },
+    {
+      "path": "licenses/GPL-3.0-reference.txt",
+      "bytes": 35147,
+      "lines": 674,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "licenses/OpenSSL-3.6.2-Apache-2.0-reference.txt",
+      "bytes": 10175,
+      "lines": 177,
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "licenses/libyara-BSD-3-Clause.txt",
+      "bytes": 1493,
+      "lines": 26,
+      "sha256": "efdabc1c1f655528b8c3a59b03668d446746d87273fab76f8af800b6e8891bd2"
+    },
+    {
+      "path": "licenses/yarGen-BSD-3-Clause.txt",
+      "bytes": 1523,
+      "lines": 24,
+      "sha256": "316e655c34d5e3fed6c923955c6171addd5058e8e5bf729bc685cf868fe4bfb7"
+    },
+    {
+      "path": "licenses/yara-python-Apache-2.0.txt",
+      "bytes": 11358,
+      "lines": 202,
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "licenses/yara-python-embedded-notices.txt",
+      "bytes": 54493,
+      "lines": 1080,
+      "sha256": "feddbcd5ce18643e80a3975736fee93672d97043152e2685afcabe30510b05c9"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 796,
+      "lines": 30,
+      "sha256": "1ed33be242228f01bb8590c286b4fd4e064d07c1847e58d00f3bf8f1470e48ab"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 118,
+      "lines": 7,
+      "sha256": "15c70c9d5332e165fe72688bbbac694d26db280f5da73eca1db0a788c86c33c2"
+    },
+    {
+      "path": "scripts/installed_cli_check.py",
+      "bytes": 2854,
+      "lines": 73,
+      "sha256": "34428ca0def72c302dcec0f2aee46b7faa56d7e0d1f66f6231390a109eed4df9"
+    },
+    {
+      "path": "scripts/native_matrix_check.py",
+      "bytes": 4040,
+      "lines": 107,
+      "sha256": "19742e930ef99dd7e563d8d511875262f870a2f8b154706f30ff20e3c685ea9c"
+    },
+    {
+      "path": "scripts/verify_dependency_notices.py",
+      "bytes": 3056,
+      "lines": 79,
+      "sha256": "b0ac2314e4db44c67c226e5f1a7e67e4a35660f9687c11fdd35f68fbaaed141e"
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "bytes": 4267,
+      "lines": 98,
+      "sha256": "3ae8ff751ec36ae874e31e13c0f1f4b9eec00fe00b182e4da5a974e13609482a"
+    },
+    {
+      "path": "src/yara_rule_draft_review/__init__.py",
+      "bytes": 104,
+      "lines": 5,
+      "sha256": "83df08ba6304537e7539ac7b4e6a12c7f9ffc36215faad1de24b19d1d79dbd7e"
+    },
+    {
+      "path": "src/yara_rule_draft_review/__main__.py",
+      "bytes": 48,
+      "lines": 3,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "src/yara_rule_draft_review/cli.py",
+      "bytes": 2904,
+      "lines": 75,
+      "sha256": "2e5cd441356e8b7e9efb2f78a718f750dbb702c090c8ad2000a3eabd1831365c"
+    },
+    {
+      "path": "src/yara_rule_draft_review/draft.py",
+      "bytes": 7805,
+      "lines": 195,
+      "sha256": "93924e4b3846400ed4c84569f3ca1d91d89ce9b43b9ce927179f565a72c1f682"
+    },
+    {
+      "path": "src/yara_rule_draft_review/engine.py",
+      "bytes": 3000,
+      "lines": 78,
+      "sha256": "4a78974033413544e09890d3639413ad24c651db61d9a5e2865b90fc25cd784e"
+    },
+    {
+      "path": "src/yara_rule_draft_review/extraction.py",
+      "bytes": 3354,
+      "lines": 89,
+      "sha256": "c5e1aae8d2e16261f0c0087cb0aef6e879b0e0632038d8b484719ef3640e7ac0"
+    },
+    {
+      "path": "src/yara_rule_draft_review/files.py",
+      "bytes": 3325,
+      "lines": 89,
+      "sha256": "70a5fac0bbeda6b5ec47f8282e20872fd502e228457fa40b1a2fffe8598e4fb9"
+    },
+    {
+      "path": "src/yara_rule_draft_review/model.py",
+      "bytes": 1201,
+      "lines": 46,
+      "sha256": "7be14ec65d4545f73a9e1df5a49eb60dc60ce6b8c86ec1847a8a56142b3f2685"
+    },
+    {
+      "path": "src/yara_rule_draft_review/output.py",
+      "bytes": 2982,
+      "lines": 76,
+      "sha256": "64f02d5285a2376746e0d8a82a77e820a92c3f3061cbd2d656b1539bcf337c03"
+    },
+    {
+      "path": "src/yara_rule_draft_review/py.typed",
+      "bytes": 0,
+      "lines": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/test_draft.py",
+      "bytes": 13683,
+      "lines": 305,
+      "sha256": "d64327d78d46e51bc91602a93c37c08eb47cd190a37e575b46dbf07260a88e02"
+    },
+    {
+      "path": "tests/test_files_cli.py",
+      "bytes": 9950,
+      "lines": 242,
+      "sha256": "2a0fa951cffd5e0bd805af1ba73e48583d1b83f65de5e58162585899fd661ba1"
+    }
+  ]
+}

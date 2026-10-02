@@ -1,0 +1,72 @@
+{
+  "repository": "Neo23x0/yarGen",
+  "commit": "34c1464eaf46d02e8807d7ef465cd884279def29",
+  "selected_full_files": [
+    {
+      "path": "yarGen.py",
+      "bytes": 103299,
+      "lines": 2423,
+      "sha256": "3afbaa7a898bf5ebc459bd5ff9b65c156a673b7068dff09b901db11a2c384c8c",
+      "git_blob": "d61ce8cd7467ed6965bbc7894f51b48d090b14f9",
+      "full_read": true,
+      "source_url": "https://github.com/Neo23x0/yarGen/blob/34c1464eaf46d02e8807d7ef465cd884279def29/yarGen.py"
+    },
+    {
+      "path": "tools/byte-mapper.py",
+      "bytes": 5696,
+      "lines": 169,
+      "sha256": "770634fb1937f387d3dccb5cec22257434ea4683e6899d25fdbbd2d2a4bb1a5e",
+      "git_blob": "61602c7013cec3f84cd404c9c7d162305a808d9d",
+      "full_read": true,
+      "source_url": "https://github.com/Neo23x0/yarGen/blob/34c1464eaf46d02e8807d7ef465cd884279def29/tools/byte-mapper.py"
+    },
+    {
+      "path": "README.md",
+      "bytes": 17173,
+      "lines": 277,
+      "sha256": "84c1fa45b67abf793b8288fe74fabd39c5eae41a66976169449bd806279dcc4c",
+      "git_blob": "a5690c74dfbfcb15deb8b41a5e1f1f15944e49ba",
+      "full_read": true,
+      "source_url": "https://github.com/Neo23x0/yarGen/blob/34c1464eaf46d02e8807d7ef465cd884279def29/README.md"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1523,
+      "lines": 24,
+      "sha256": "316e655c34d5e3fed6c923955c6171addd5058e8e5bf729bc685cf868fe4bfb7",
+      "git_blob": "a38687ce5ea15c56bb7bde37bc639fc07ff4c459",
+      "full_read": true,
+      "source_url": "https://github.com/Neo23x0/yarGen/blob/34c1464eaf46d02e8807d7ef465cd884279def29/LICENSE"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 42,
+      "lines": 3,
+      "sha256": "75fe9548785a6391175099efbd8db654b3344e8ff6790a5b58b696a456b4dc3a",
+      "git_blob": "b4b81d9f7399215db8a79931f2dcebda0b6a8fc6",
+      "full_read": true,
+      "source_url": "https://github.com/Neo23x0/yarGen/blob/34c1464eaf46d02e8807d7ef465cd884279def29/requirements.txt"
+    },
+    {
+      "path": "prepare-release.sh",
+      "bytes": 207,
+      "lines": 14,
+      "sha256": "f727437fc0a02ea27673c8e041990ee27b2991b369c212db6cdd1f167fec2268",
+      "git_blob": "fb08ebedd7f9686668b3d25dd5dcc19db057f556",
+      "full_read": true,
+      "source_url": "https://github.com/Neo23x0/yarGen/blob/34c1464eaf46d02e8807d7ef465cd884279def29/prepare-release.sh"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 160,
+      "lines": 17,
+      "sha256": "c38c1aace4a5f758188efa7e6a0938dcf949b5dcdb9e4a22398d1f736569583a",
+      "git_blob": "f47aaa29ca65e48be0ed2421446e112de4c144b0",
+      "full_read": true,
+      "source_url": "https://github.com/Neo23x0/yarGen/blob/34c1464eaf46d02e8807d7ef465cd884279def29/.gitignore"
+    }
+  ],
+  "selected": "ASCII and ASCII code points represented in UTF16LE, supplied-goodware string difference, deterministic confidence ranking, single and common-string drafts; whole entry and excluded branches read",
+  "excluded": "PE/ELF opcodes/import/export/imphash, XML/PEstudio blacklist and contents, hex/Base64 decoding, inverse rules, opaque databases/updates/rebuild/writeback, directory recursion/watch/delete, external sourcepath metadata, AI prompt append; no whole platform rewrite claim",
+  "upstream_tests": "No test sources in fixed tree; upstream not executed."
+}

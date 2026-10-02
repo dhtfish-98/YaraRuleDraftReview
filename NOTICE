@@ -1,0 +1,34 @@
+YaraRuleDraftReview
+Copyright 2026 YaraRuleDraftReview contributors
+New Python implementation and project material licensed under Apache-2.0.
+Implementation, documentation and tests were AI assisted; this does not establish
+an applicant's independently authored work, CVP eligibility or safeguard impact.
+
+Mechanism provenance: Neo23x0/yarGen, fixed commit
+34c1464eaf46d02e8807d7ef465cd884279def29.
+Copyright (c) 2015, Florian Roth. BSD-3-Clause.
+Complete unmodified original: licenses/yarGen-BSD-3-Clause.txt.
+The new extractor, corpus index, statistical ranking, rule assembly and validation
+are independently implemented. The selected pure-string scope does not implement
+yarGen's complete PE/opcode, decoding, network database or directory monitor.
+
+Runtime dependency: yara-python 4.5.4, The YARA Authors.
+Copyright (c) 2007-2022. The YARA Authors. All Rights Reserved.
+Apache-2.0: licenses/yara-python-Apache-2.0.txt.
+Bundled libyara 4.5.4 is separately licensed BSD-3-Clause.
+Copyright (c) 2007-2016. The YARA Authors. All Rights Reserved.
+Complete upstream COPYING: licenses/libyara-BSD-3-Clause.txt.
+The native dependency is installed separately and is not copied into this wheel.
+Additional optional/build/platform dependency terms belong to their distributions;
+this project's notices do not replace those packages' own notices.
+
+Selected dependency source license supplement:
+licenses/yara-python-embedded-notices.txt contains the complete original license
+comments from the pinned binding and bundled libyara source, with source paths.
+They include BSD variants, Avast Software MIT, Apache-2.0, and generated Bison
+parser GPLv3 notices with their explicit special exception. The complete GPLv3
+reference is licenses/GPL-3.0-reference.txt. The local rebuilt extension links
+OpenSSL 3.6.2; its complete license is retained as a local-platform reference in
+licenses/OpenSSL-3.6.2-Apache-2.0-reference.txt. Native binaries are not redistributed
+by this package. These terms are supplemental attribution, not a claim that all
+platform or optional dependencies have identical licenses.

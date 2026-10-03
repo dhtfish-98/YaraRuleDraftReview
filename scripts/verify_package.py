@@ -9,6 +9,7 @@ import io
 import json
 from pathlib import Path
 import tarfile
+import tomllib
 import zipfile
 
 
@@ -18,23 +19,23 @@ def main():
     parser.add_argument("--installed", type=Path)
     args = parser.parse_args()
     root = args.root.resolve()
-    wheel = root / "dist/yara_rule_draft_review-0.1.0-py3-none-any.whl"
-    sdist = root / "dist/yara_rule_draft_review-0.1.0.tar.gz"
+    config = tomllib.loads((root / "pyproject.toml").read_text())["project"]
+    version = config["version"]
+    prefix = f"yara_rule_draft_review-{version}"
+    wheel = root / f"dist/{prefix}-py3-none-any.whl"
+    sdist = root / f"dist/{prefix}.tar.gz"
     manifest = json.loads((root / "SOURCE_MANIFEST.json").read_text())
+    assert manifest["version"] == version
     with zipfile.ZipFile(wheel) as archive:
         names = archive.namelist()
         assert len(names) == len(set(names))
         assert all(not name.startswith("/") and ".." not in name.split("/") for name in names)
-        metadata_name = "yara_rule_draft_review-0.1.0.dist-info/METADATA"
+        metadata_name = f"{prefix}.dist-info/METADATA"
         metadata = message_from_bytes(archive.read(metadata_name))
-        assert metadata["Name"] == "yara-rule-draft-review" and metadata["Version"] == "0.1.0"
+        assert metadata["Name"] == "yara-rule-draft-review" and metadata["Version"] == version
         assert metadata["License-Expression"] == "Apache-2.0"
         assert metadata.get_all("Requires-Dist") == ["yara-python==4.5.4"]
-        records = list(
-            csv.reader(
-                io.StringIO(archive.read("yara_rule_draft_review-0.1.0.dist-info/RECORD").decode())
-            )
-        )
+        records = list(csv.reader(io.StringIO(archive.read(f"{prefix}.dist-info/RECORD").decode())))
         assert {row[0] for row in records} == set(names)
         for name, digest, length in records:
             if name.endswith("/RECORD"):
@@ -55,7 +56,7 @@ def main():
             str(file.relative_to(root)) for file in sorted((root / "licenses").glob("*.txt"))
         ]
         for name in license_paths:
-            member = "yara_rule_draft_review-0.1.0.dist-info/licenses/" + name
+            member = f"{prefix}.dist-info/licenses/" + name
             assert archive.read(member) == (root / name).read_bytes()
             if args.installed:
                 assert (args.installed / member).read_bytes() == (root / name).read_bytes()
@@ -70,7 +71,7 @@ def main():
             assert len(raw) == row["bytes"] and sha256(raw).hexdigest() == row["sha256"]
             if row["path"] == ".gitignore":
                 continue
-            member = "yara_rule_draft_review-0.1.0/" + row["path"]
+            member = f"{prefix}/" + row["path"]
             assert members[member].isreg() and archive.extractfile(members[member]).read() == raw
         assert all(
             not any(

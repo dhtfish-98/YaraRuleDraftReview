@@ -122,8 +122,8 @@
     },
     {
       "path": "scripts/verify_package.py",
-      "sha256": "3ae8ff751ec36ae874e31e13c0f1f4b9eec00fe00b182e4da5a974e13609482a",
-      "bytes": 4267
+      "sha256": "f467197ea06e9a3375c733a8e664aec69e6ffc812b94ca9c45e8becbbfc1db6c",
+      "bytes": 4316
     },
     {
       "path": "src/yara_rule_draft_review/__init__.py",
@@ -187,8 +187,8 @@
     },
     {
       "path": "tests/test_safe_read_capabilities.py",
-      "sha256": "62cf53726ba3e6e51ab363244e7188423bf7084abaf7c06082feefaaba86d490",
-      "bytes": 7711
+      "sha256": "6afb69fea4b8c8c34a8f0687459ddfb80d3689caeea6622e26bfa1d1552068ae",
+      "bytes": 8091
     }
   ]
 }

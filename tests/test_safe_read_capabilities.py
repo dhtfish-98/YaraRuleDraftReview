@@ -86,23 +86,31 @@ class SafeReadCapabilities(unittest.TestCase):
             sample.write_bytes(b"synthetic")
             original_open = files.os.open
             dir_fd_support = set(files.os.supports_dir_fd)
-            for attribute in ('supports_dir_fd', 'supports_follow_symlinks'):
+            for attribute in ("supports_dir_fd", "supports_follow_symlinks"):
                 for value in ("MISSING", None, set(), frozenset(), [], (), {}, True):
                     with self.subTest(attribute=attribute, value=value):
                         with patch.object(files.os, "open", wraps=original_open) as opened:
-                            with patch.object(files.os, "supports_dir_fd", dir_fd_support | {opened}):
+                            with patch.object(
+                                files.os, "supports_dir_fd", dir_fd_support | {opened}
+                            ):
                                 with patch.object(files.os, attribute, value, create=True):
                                     if value == "MISSING":
                                         delattr(files.os, attribute)
                                     with self.assertRaises(Issue) as failure:
                                         files.read_local(str(sample))
-                                    self.assertEqual(failure.exception.code, 'safe_file_platform_not_supported')
+                                    self.assertEqual(
+                                        failure.exception.code, "safe_file_platform_not_supported"
+                                    )
                                     output = io.StringIO()
                                     with redirect_stdout(output):
-                                        exitcode = cli.main(["--target", str(sample), "--benign", str(sample)])
+                                        exitcode = cli.main(
+                                            ["--target", str(sample), "--benign", str(sample)]
+                                        )
                                     self.assertEqual(exitcode, 2)
                                     if output.getvalue():
-                                        self.assertEqual(json.loads(output.getvalue())["status"], "OPEN")
+                                        self.assertEqual(
+                                            json.loads(output.getvalue())["status"], "OPEN"
+                                        )
                                     opened.assert_not_called()
             self.assertEqual(sample.read_bytes(), b"synthetic")
 
@@ -111,7 +119,9 @@ class SafeReadCapabilities(unittest.TestCase):
             sample = Path(temporary).resolve() / "synthetic.bin"
             sample.write_bytes(b"synthetic")
             for collection in (set, frozenset):
-                with patch.object(files.os, "supports_dir_fd", collection(files.os.supports_dir_fd)):
+                with patch.object(
+                    files.os, "supports_dir_fd", collection(files.os.supports_dir_fd)
+                ):
                     self.assertEqual(files.read_local(str(sample)), b"synthetic")
 
     def test_yara_requires_stat_in_both_support_collections(self):
@@ -129,5 +139,7 @@ class SafeReadCapabilities(unittest.TestCase):
                         code = cli.main(["--target", str(sample), "--benign", str(sample)])
                     self.assertEqual(code, 2)
                     self.assertEqual(json.loads(stream.getvalue())["status"], "OPEN")
-            with patch.object(files.os, "supports_follow_symlinks", frozenset(files.os.supports_follow_symlinks)):
+            with patch.object(
+                files.os, "supports_follow_symlinks", frozenset(files.os.supports_follow_symlinks)
+            ):
                 self.assertEqual(files.read_local(str(sample)), b"synthetic")

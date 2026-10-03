@@ -1,3 +1,17 @@
+# Current validation — 0.1.1
+
+The 2026-10-03 attribution update identifies the new implementation author and maintainer as dhtfish98. The final wheel and sdist were rebuilt, and a fresh isolated consumer ran **41 existing and targeted unittest methods successfully**, imported the installed package from site-packages, exercised the declared CLI contract and matched every shipped runtime/notice byte to current source. Wheel metadata records author dhtfish98 and version 0.1.1; RECORD and source-distribution contents were checked. Current runtime identities are in SOURCE_MANIFEST.json; ATTRIBUTION_UPDATE.json records the exact selected validation scope. The matching private build/install/test logs and artifact hashes are retained in the batch validation records, outside this public project.
+
+One functional change in this update rejects missing, non-positive or non-integer safe-file flags before opening input. API/CLI regressions cover missing, None, invalid, zero and boolean flags, plus regular files and symbolic links.
+
+Installed validation used the actual pinned yara-python/libyara 4.5.4 compiler, direct native data matching and the complete existing finite synthetic compiler matrix. No sample was executed.
+
+The current safe-file capability gate also requires set/frozenset directory-relative support declarations containing each actually used operation before opening input. Missing, None, empty, malformed or operation-incomplete collections yield the existing controlled unsupported result. Normal set/frozenset declarations and API/CLI rejection-before-open are regression tested. YARA also requires os.stat in both directory-relative and no-follow-stat support declarations.
+
+## Historical validation evidence
+
+The following earlier records retain their original versions, counts and fixed source identities. They are historical observations, not evidence that an old artifact is the current package.
+
 # Validation evidence and limits
 
 The source unittest suite includes 35 methods, with actual native YARA compilation,

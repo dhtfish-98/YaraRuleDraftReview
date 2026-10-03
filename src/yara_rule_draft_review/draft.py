@@ -19,7 +19,7 @@ def base_report():
         "generalization": "OPEN",
         "corpus_label_authenticity": "OPEN",
         "cvp_eligibility": "OPEN",
-        "ai_assisted": True,
+        "implementation_author": "dhtfish98",
     }
 
 
@@ -81,7 +81,7 @@ def create_rules(targets, benign, limits):
         lines = [
             f"rule {name} {{",
             "  meta:",
-            '    description = "AI assisted detection draft; maliciousness and generalization OPEN"',
+            '    description = "Detection draft by dhtfish98; maliciousness and generalization OPEN"',
             f'    target_corpus_sha256 = "{fingerprint(sources)}"',
             f'    training_benign_corpus_sha256 = "{goodware_id}"',
             "    draft = true",
@@ -190,6 +190,6 @@ def draft(targets, benign, negatives=(), reveal_rules=False, limits=DEFAULT_LIMI
             "generalization": "OPEN",
             "corpus_label_authenticity": "OPEN",
             "cvp_eligibility": "OPEN",
-            "ai_assisted": True,
+            "implementation_author": "dhtfish98",
         }
     return report

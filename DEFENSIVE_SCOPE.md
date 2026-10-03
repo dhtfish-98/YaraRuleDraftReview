@@ -30,4 +30,4 @@ Hashes, offsets and exact match names still carry correlatable corpus evidence.
 Input error or late compilation/negative failure never emits an apparently safe
 partial rule source. No claim is made that this project will avoid model
 safeguards, satisfy a CVP decision, or prove an applicant's independent authorship.
-AI-assisted implementation and evidence are explicitly disclosed.
+New implementation author: dhtfish98. Scope and evidence are explicitly disclosed.

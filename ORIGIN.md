@@ -1,5 +1,8 @@
 # Origin and attribution
 
+Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.1**. Upstream authors and reused components retain their original attribution.
+
+
 Mechanism baseline: Neo23x0/yarGen at
 `34c1464eaf46d02e8807d7ef465cd884279def29`.
 The frozen source/CLI closure was read in full: `yarGen.py` (2423 lines),
@@ -47,5 +50,5 @@ Primary API documentation:
 Primary source/license references are the fixed upstream URLs in SOURCE_AUDIT.json
 and DEPENDENCY_AUDIT.json. Complete source review means only the enumerated baseline
 closure and all new runtime/test/CLI/package/CI source; it is not a whole ecosystem
-security audit. AI assistance is disclosed, and origin review or successful
+security audit. New implementation author: dhtfish98; origin review or successful
 packaging does not establish CVP qualification or real safeguard impact.

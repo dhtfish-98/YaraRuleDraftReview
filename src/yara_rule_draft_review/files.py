@@ -10,11 +10,18 @@ KEYS = ("st_dev", "st_ino", "st_size", "st_mtime_ns", "st_ctime_ns")
 
 
 def platform():
+    dir_fd_support = getattr(os, "supports_dir_fd", None)
+    follow_symlink_support = getattr(os, "supports_follow_symlinks", None)
     if (
-        any(not hasattr(os, name) for name in ("O_NOFOLLOW", "O_DIRECTORY", "O_NONBLOCK"))
-        or os.open not in os.supports_dir_fd
-        or os.stat not in os.supports_dir_fd
-        or os.stat not in os.supports_follow_symlinks
+        any(
+            type(getattr(os, name, None)) is not int or getattr(os, name, None) <= 0
+            for name in ("O_NOFOLLOW", "O_DIRECTORY", "O_NONBLOCK")
+        )
+        or type(dir_fd_support) not in (set, frozenset)
+        or os.open not in dir_fd_support
+        or os.stat not in dir_fd_support
+        or type(follow_symlink_support) not in (set, frozenset)
+        or os.stat not in follow_symlink_support
     ):
         raise Issue("safe_file_platform_not_supported")
 

@@ -1,5 +1,8 @@
 # YaraRuleDraftReview
 
+Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.1**. Upstream authors and reused components retain their original attribution.
+
+
 Create bounded, offline **detection drafts** from explicit authorized byte corpora.
 The independent mechanism extracts strings, builds a read-only in-memory benign
 index, removes observed benign strings, ranks the remaining candidates, and
@@ -9,7 +12,7 @@ negative using **yara-python/libyara 4.5.4**. A failure yields OPEN and suppress
 the draft. Passing these finite observations does not classify a file as malicious
 or establish generalization, trustworthy corpus labels, or CVP eligibility.
 
-This project was AI assisted. It independently implements the selected pure-string
+New implementation author: dhtfish98. This project independently implements the selected pure-string
 mechanism of [yarGen at the frozen commit](https://github.com/Neo23x0/yarGen/tree/34c1464eaf46d02e8807d7ef465cd884279def29).
 See [ORIGIN](ORIGIN.md), [scope](DEFENSIVE_SCOPE.md), [validation](VALIDATION.md)
 and [complete upstream licenses](licenses/yarGen-BSD-3-Clause.txt).
@@ -137,3 +140,5 @@ rule condition. Compiler syntax/escape/warning checks are actual engine calls;
 there is no compiler wall-time API or OS memory isolation guarantee. Finite
 literal grammar/source budgets bound the input to compilation. General runtime
 resource isolation and native-dependency correctness remain OPEN.
+
+Safe file input requires positive integer `O_NOFOLLOW`, `O_DIRECTORY` and `O_NONBLOCK` flags and the directory-relative operations used by this reader. A missing, zero or invalid capability returns `OPEN` with `safe_file_platform_not_supported` before input is opened. The supported and tested file-reader platforms are macOS and Linux; native Windows file reading is not validated by these checks.

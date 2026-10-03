@@ -6,10 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "yara-rule-draft-review"
 version = "0.1.2"
 description = "Bounded offline goodware difference and actually compiled literal YARA detection drafts"
-readme = "README.md"
+readme = "项目文档/README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
-license-files = ["LICENSE", "NOTICE"]
+license-files = ["项目文档/LICENSE", "项目文档/NOTICE"]
 authors = [{name = "dhtfish98"}]
 dependencies = ["yara-python==4.5.4"]
 

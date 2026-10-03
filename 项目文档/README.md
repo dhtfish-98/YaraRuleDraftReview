@@ -1,6 +1,8 @@
+> 目录已整理：文档在「项目文档」，构建、缓存与暂存输入在「Build」。从仓库根目录运行 `python3 构建.py --build`；如需使用本文原有源码命令，先运行 `python3 构建.py --stage --ci`，再进入 `Build/源码`。暂存会恢复原输入路径。现有版本和历史验证记录按各自提交理解。
+
 # YaraRuleDraftReview
 
-Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.1**. Upstream authors and reused components retain their original attribution.
+Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.2**. Upstream authors and reused components retain their original attribution.
 
 
 Create bounded, offline **detection drafts** from explicit authorized byte corpora.
@@ -14,8 +16,8 @@ or establish generalization, trustworthy corpus labels, or CVP eligibility.
 
 New implementation author: dhtfish98. This project independently implements the selected pure-string
 mechanism of [yarGen at the frozen commit](https://github.com/Neo23x0/yarGen/tree/34c1464eaf46d02e8807d7ef465cd884279def29).
-See [ORIGIN](ORIGIN.md), [scope](DEFENSIVE_SCOPE.md), [validation](VALIDATION.md)
-and [source and external dependency boundaries](ORIGIN.md).
+See [ORIGIN](<ORIGIN.md>), [scope](<DEFENSIVE_SCOPE.md>), [validation](<VALIDATION.md>)
+and [source and external dependency boundaries](<ORIGIN.md>).
 
 ## API
 

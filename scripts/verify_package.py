@@ -1,5 +1,6 @@
 """Check wheel/sdist/consumer bytes, metadata, RECORD and original notices."""
 
+from email import policy
 import argparse
 import base64
 import csv
@@ -31,7 +32,7 @@ def main():
         assert len(names) == len(set(names))
         assert all(not name.startswith("/") and ".." not in name.split("/") for name in names)
         metadata_name = f"{prefix}.dist-info/METADATA"
-        metadata = message_from_bytes(archive.read(metadata_name))
+        metadata = message_from_bytes(archive.read(metadata_name), policy=policy.default)
         assert metadata["Name"] == "yara-rule-draft-review" and metadata["Version"] == version
         assert metadata["License-Expression"] == "Apache-2.0"
         assert metadata.get_all("Requires-Dist") == ["yara-python==4.5.4"]
@@ -52,7 +53,7 @@ def main():
                 assert archive.read(member) == file.read_bytes()
                 if args.installed:
                     assert (args.installed / member).read_bytes() == file.read_bytes()
-        license_paths = ["LICENSE", "NOTICE"] + [
+        license_paths = ["项目文档/LICENSE", "项目文档/NOTICE"] + [
             str(file.relative_to(root)) for file in sorted((root / "licenses").glob("*.txt"))
         ]
         for name in license_paths:

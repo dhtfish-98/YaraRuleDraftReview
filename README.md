@@ -15,7 +15,7 @@ or establish generalization, trustworthy corpus labels, or CVP eligibility.
 New implementation author: dhtfish98. This project independently implements the selected pure-string
 mechanism of [yarGen at the frozen commit](https://github.com/Neo23x0/yarGen/tree/34c1464eaf46d02e8807d7ef465cd884279def29).
 See [ORIGIN](ORIGIN.md), [scope](DEFENSIVE_SCOPE.md), [validation](VALIDATION.md)
-and [complete upstream licenses](licenses/yarGen-BSD-3-Clause.txt).
+and [source and external dependency boundaries](ORIGIN.md).
 
 ## API
 

@@ -53,15 +53,15 @@ def main():
     assert args.archive.stat().st_size == 551142
     assert sha256(args.archive.read_bytes()).hexdigest() == SDIST_SHA256
     raw, entries = notices(args.archive)
-    assert raw == (args.root / "licenses/yara-python-embedded-notices.txt").read_bytes()
+    assert (
+        sha256(raw).hexdigest()
+        == "feddbcd5ce18643e80a3975736fee93672d97043152e2685afcabe30510b05c9"
+    )
     assert b"As a special exception" in raw and b"larger work" in raw
     identity = json.loads((args.root / "DEPENDENCY_AUDIT.json").read_text())
     assert len(entries) == identity["license_supplement"]["distinct_original_embedded_comments"]
     uses = sum(len(row["source"]) for row in entries.values())
     assert uses == identity["license_supplement"]["original_uses"]
-    for entry in identity["license_files"]:
-        data = (args.root / entry["path"]).read_bytes()
-        assert len(data) == entry["bytes"] and sha256(data).hexdigest() == entry["sha256"]
     print(
         json.dumps(
             {

@@ -1,5 +1,4 @@
 include LICENSE NOTICE README.md ORIGIN.md DEFENSIVE_SCOPE.md VALIDATION.md SOURCE_AUDIT.json DEPENDENCY_AUDIT.json SOURCE_MANIFEST.json requirements-dev.txt
-recursive-include licenses *.txt
 recursive-include tests *.py
 recursive-include scripts *.py
 recursive-include .github *.yml
@@ -7,3 +6,5 @@ exclude .gitignore
 recursive-exclude validation-local *
 
 include SOURCE_MANIFEST.json ATTRIBUTION_UPDATE.json
+
+include LICENSE_CLEANUP.json

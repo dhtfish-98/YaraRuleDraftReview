@@ -64,8 +64,10 @@
   "license_supplement": {
     "distinct_original_embedded_comments": 33,
     "original_uses": 129,
-    "full_notice_texts_preserved": true,
-    "source_binary_equivalence": "OPEN"
+    "source_binary_equivalence": "OPEN",
+    "current_distribution": "Optional duplicate reference texts are omitted; original external source comments still verified by fixed complete extraction hash/count and exception.",
+    "original_external_source_full_comments_verified": true,
+    "current_product_comment_supplement_distributed": false
   },
   "local_native_build": {
     "verified_sdist_sha256": "4c682170f3d5cb3a73aa1bd0dc9ab1c0957437b937b7a83ff6d7ffd366415b9c",
@@ -97,7 +99,12 @@
     "local_build_and_observed_execution": "PASS",
     "other_platform_binary_identity": "OPEN"
   },
-  "license_files": [
+  "primary_docs": [
+    "https://yara.readthedocs.io/en/stable/yarapython.html"
+  ],
+  "native_dependency_full_implementation_review": "OPEN",
+  "native_security_and_supply_chain_authenticity": "OPEN",
+  "historical_optional_license_reference_files": [
     {
       "path": "licenses/GPL-3.0-reference.txt",
       "bytes": 35147,
@@ -129,9 +136,5 @@
       "sha256": "feddbcd5ce18643e80a3975736fee93672d97043152e2685afcabe30510b05c9"
     }
   ],
-  "primary_docs": [
-    "https://yara.readthedocs.io/en/stable/yarapython.html"
-  ],
-  "native_dependency_full_implementation_review": "OPEN",
-  "native_security_and_supply_chain_authenticity": "OPEN"
+  "license_files": []
 }

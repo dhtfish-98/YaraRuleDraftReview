@@ -17,22 +17,22 @@
       "bytes": 200
     },
     {
-      "path": "ATTRIBUTION_UPDATE.json",
+      "path": "项目文档/ATTRIBUTION_UPDATE.json",
       "sha256": "3166d703ca70b6d799ecc914c465e7278779bbf7eed693834d545fd356aaae6a",
       "bytes": 1100
     },
     {
-      "path": "DEPENDENCY_AUDIT.json",
+      "path": "项目文档/DEPENDENCY_AUDIT.json",
       "sha256": "4db1dcb12d2b071b3f2c0a7a14751bc8a997ea518ec7518bb27e82a0b6d7d268",
       "bytes": 5090
     },
     {
       "path": "MANIFEST.in",
-      "sha256": "8a943333de9706d53d641acf21d4c6248054962eb93c3ba84e89c3ac6eeaf304",
-      "bytes": 985
+      "sha256": "89545002c1feb6ccc7e107e069a765482f17b357b89b5f9b74088ff56a14ab70",
+      "bytes": 1024
     },
     {
-      "path": "SOURCE_AUDIT.json",
+      "path": "项目文档/SOURCE_AUDIT.json",
       "sha256": "7e4fbb48310d25686e836fb158bc97aee0dbf4d4e96439dd33289cdca1e2e71a",
       "bytes": 3294
     },
@@ -58,8 +58,8 @@
     },
     {
       "path": "scripts/verify_dependency_notices.py",
-      "sha256": "1ccf6877280c4db866600626097e80d852efd2dd69d7ef10bd656fed5e96b641",
-      "bytes": 2905
+      "sha256": "5f3d05046129f06d844c8df6c1253d8c6e5a8e22471f165e055cc6dad74273e9",
+      "bytes": 2918
     },
     {
       "path": "scripts/verify_package.py",

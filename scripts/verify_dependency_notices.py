@@ -58,7 +58,7 @@ def main():
         == "feddbcd5ce18643e80a3975736fee93672d97043152e2685afcabe30510b05c9"
     )
     assert b"As a special exception" in raw and b"larger work" in raw
-    identity = json.loads((args.root / "DEPENDENCY_AUDIT.json").read_text())
+    identity = json.loads((args.root / "项目文档/DEPENDENCY_AUDIT.json").read_text())
     assert len(entries) == identity["license_supplement"]["distinct_original_embedded_comments"]
     uses = sum(len(row["source"]) for row in entries.values())
     assert uses == identity["license_supplement"]["original_uses"]

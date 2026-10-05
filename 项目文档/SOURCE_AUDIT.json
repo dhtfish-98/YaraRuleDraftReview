@@ -67,6 +67,6 @@
     }
   ],
   "selected": "ASCII and ASCII code points represented in UTF16LE, supplied-goodware string difference, deterministic confidence ranking, single and common-string drafts; whole entry and excluded branches read",
-  "excluded": "PE/ELF opcodes/import/export/imphash, XML/PEstudio blacklist and contents, hex/Base64 decoding, inverse rules, opaque databases/updates/rebuild/writeback, directory recursion/watch/delete, external sourcepath metadata, AI prompt append; no whole platform rewrite claim",
+  "excluded": "PE/ELF opcodes/import/export/imphash, XML/PEstudio blacklist and contents, hex/Base64 decoding, inverse rules, opaque databases/updates/rebuild/writeback, directory recursion/watch/delete, external sourcepath metadata, prompt append; no whole platform rewrite claim",
   "upstream_tests": "No test sources in fixed tree; upstream not executed."
 }

@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "project": "YaraRuleDraftReview",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "implementation_author": "dhtfish98",
   "self_excluded_to_avoid_recursive_hash": true,
-  "current_validation": "项目文档/LICENSE_CLEANUP.json",
+  "current_validation": "项目文档/VALIDATION.md",
   "files": [
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "cf27f5e26e2ac21a896a42a8e402e36bbea1a51eff5f29825eb0c82ea3810dfa",
+      "sha256": "44b8019d0ee8f594dd67859f3a91f9f23a8440b66c3ac3fa2d64b31d4e72247d",
       "bytes": 3347
     },
     {
@@ -33,12 +33,12 @@
     },
     {
       "path": "项目文档/SOURCE_AUDIT.json",
-      "sha256": "7e4fbb48310d25686e836fb158bc97aee0dbf4d4e96439dd33289cdca1e2e71a",
-      "bytes": 3294
+      "sha256": "ad0cbac5f59d41cb79c70f711c592042d9bbc733512675f12cb37b5d63798122",
+      "bytes": 3291
     },
     {
       "path": "pyproject.toml",
-      "sha256": "6e525806568bbebc1f952abd5aa52058a903f2598ad187c963d3a47baa7f4240",
+      "sha256": "7f6dc3b0c93ca17cef0862b0e1a49897ebcf2babbfdead53ec174bd22d3739ee",
       "bytes": 794
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "path": "src/yara_rule_draft_review/__init__.py",
-      "sha256": "5f6a33ae594b331e62efd74f50b9e104924e178f9ae13c0cb3f1b054e968e0ab",
+      "sha256": "ce21aa878982e1c04cb3d9831693f21cb8bb5cd9820e2c65ae367dbeb58a6211",
       "bytes": 130
     },
     {
@@ -137,7 +137,7 @@
       "path": "构建.py"
     },
     {
-      "sha256": "b8c3bf9ffc871ceb0ed23d02e0cbb7a7fe14572dda17a8809cd96537a7e33f7f",
+      "sha256": "9ce40eda17ff293a9951ae12b07dd49ee3bbb89ad2e29fa70195533f1fc5b66c",
       "bytes": 1465,
       "path": "构建配置.json"
     },
@@ -163,18 +163,18 @@
     },
     {
       "path": "项目文档/ORIGIN.md",
-      "sha256": "c5cda0b31e1fc1596191bcb6506ba96a349f0c29913b10bb6e64db27cd1710ef",
+      "sha256": "41856685bd5c99304fad4cc023e01a4616f18bca1e6a23e42e4eb81f27a8802b",
       "bytes": 3305
     },
     {
       "path": "项目文档/README.md",
-      "sha256": "475f70b514dc67f8453fcd07d4cd0207694c66661c5250f995156bf32fb3d7e5",
+      "sha256": "c38897f8b424085eda2020eb680184343b29cc26cada8c56ab2cc47b3e19bdcf",
       "bytes": 8694
     },
     {
       "path": "项目文档/VALIDATION.md",
-      "sha256": "27560c8032cfbac96a57e57ae0dacc39b513e014ded6c4d440447abb559ab7b5",
-      "bytes": 6975
+      "sha256": "f91bc2721f593541e78660a09992784a4b77ef6fd9c955eb50ad5cb5b2588161",
+      "bytes": 7765
     },
     {
       "sha256": "e964b8628fb3e10721e6c99343c86df4f700894ff035e0effe1633673337a7ce",
@@ -192,6 +192,6 @@
     "original_inventory": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.public-ce09c281acd8.json",
     "original_inventory_sha256": "e964b8628fb3e10721e6c99343c86df4f700894ff035e0effe1633673337a7ce",
     "path_view": "Canonical repository paths; the builder also restores byte-identical legacy aliases under ignored Build for existing packaging checks",
-    "scope": "Current file inventory and packaging paths only; runtime bytes/version/API unchanged. Historical validation and security conclusions are retained, not rerun or newly certified."
+    "scope": "Historical directory-layout migration record; current release advances package version and retains runtime behavior. Historical security conclusions are not newly certified."
   }
 }

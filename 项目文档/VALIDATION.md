@@ -1,4 +1,12 @@
-# Current licensing validation — 0.1.2
+# Current release validation — 0.1.3, 2026-10-05
+
+This patch publishes the already public Build/项目文档 layout with a matching package version and CI wheel filename. Native YARA compilation and evidence interpretation are unchanged from public main 4fa6b4e44dc53dbe14f8183ebb5e8f87d38db63b; the package version constant advances. New implementation author and maintainer: dhtfish98. The project Apache-2.0 license and applicable yara-python/libyara notices remain intact.
+
+The current source inventory is SOURCE_MANIFEST.json. Exact local tests, native compiler matrix, installed consumer, package contents, remote CI, tag and release require separate version-bound verification. These engineering checks do not establish CVP eligibility or approval.
+
+## Historical delivery evidence
+
+# Prior licensing validation — 0.1.2
 
 This patch removes only 6 confirmed unused complete reference-license/notice copies. New implementation author remains dhtfish98. Runtime parsing and evidence interpretation are unchanged; runtime changes are package version constants and any existing version display. The new source suite ran **41 unittest methods with nonzero PASS**. Current source identities are in SOURCE_MANIFEST.json, and LICENSE_CLEANUP.json describes the exact licensing boundary. Wheel and sdist reconstruction, fresh isolated consumer tests, CLI contracts, runtime/notice byte identity and package metadata are independently bound to the new assets in the batch release records; source tests alone do not prove those outcomes. New hosted CI and publication remain separate observations.
 
